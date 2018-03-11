@@ -1,0 +1,257 @@
+body {
+  background-image: url('img/bg.png');
+  color: #000305;
+  font-size: 87.5%; /* base is 14px -> make it responsive */
+  font-family: Arial, 'Lucida Sans Unicode';
+  line-height: 1.5;
+  text-align: left;
+}
+
+a {
+  text-decoration: none; /* chong gach chan */
+}
+
+a:link, a:visited {
+  color: #CF5C3F;
+}
+
+a:hover, a:active {
+  background-color: #CF5C3F;
+  color: #FFF;
+}
+
+.body {
+  margin: 0 auto;
+  width: 70%;
+  clear: both;
+}
+
+.mainheader img {
+  width: 30%;
+  height: auto;
+  margin: 2% 0; /*HIEP- top*/
+}
+
+.mainheader nav {
+  background-color: #666;
+  height: 40px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.mainheader nav ul {
+  list-style: none;
+  margin: 0 auto; /* de len margin truoc cua img */
+}
+
+.mainheader nav ul li {
+  float: left;
+  display: inline;
+}
+
+
+.mainheader nav a:link, .mainheader nav a:visited {
+  color: #FFF;
+  display: inline-block;
+  padding: 10px 25px; /*30:16*/
+  /*height: 10px;* come back */
+}
+
+.mainheader nav a:hover, .mainheader nav a:active {
+
+}
+
+.mainheader nav .active a:link, .mainheader nav .active a:visited {
+  background-color: #CF5C3F;
+  text-shadow: none;
+}
+
+.mainheader ul li a {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.mainContent {
+  line-height: 25px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  /*overflow: hidden; /* hidden phan 2 container de len nhau*/*/
+}
+
+.content {
+  width: 70%;
+  float:left;
+}
+
+.topContent {
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  padding: 3% 5%;
+  margin-top: 2%;
+}
+
+.bottomContent {
+    background-color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.top-sidebar {
+  width: 21%;
+  margin-left: 3%;
+  padding: 2% 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  float: left;
+  background-color: #FFF;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.post-info {
+  font-style: italic;
+  color: #999;
+  font-size: 85%;
+}
+
+.middle-sidebar {
+  width: 21%;
+  margin-left: 3%;
+  padding: 2% 3%;
+  margin-bottom: 2%;
+  float: left;
+  background-color: #FFF;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.bottom-sidebar {
+  width: 21%;
+  margin-left: 3%;
+  padding: 2% 3%;
+  margin-bottom: 2%;
+  float: left;
+  background-color: #FFF;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.mainFooter {
+  width: 100%;
+  height: 40px;
+  float: left;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #666;
+
+
+}
+
+.mainFooter p {
+  width: 92%;
+  margin: 1% auto;
+  color: #FFF;
+}
+
+@media only screen and (min-width: 150px) and (max-width:600px) {
+  .body {
+    width: 90%; /* khi thu nho thi 2 le cung thu nho */
+    font-size: 95%;
+  }
+
+  .mainheader img {
+    width: 100%;
+  }
+
+  .mainheader nav {
+    height: 160px;
+  }
+
+  .mainheader nav ul {
+    padding-left: 0;
+  }
+
+  .mainheader nav ul li {
+    width: 100%; /* not need all list inline */
+    /*margin: 0 auto; /* center text */
+    text-align: center;
+  }
+
+
+  .mainheader nav a:link, .mainheader nav a:visited {
+    padding: 10px 25px; /*30:16*/
+    /*height: 10px;* come back */
+    display: block; /* se bien background color full */
+  }
+
+  .mainheader nav a:hover, .mainheader nav a:active {
+
+  }
+
+  .content {
+    width: 100%;
+    float:left;
+    margin-top: 2%;
+  }
+
+  .post-info {
+    display: none; /* disappear non info*/
+  }
+
+  .topContent {
+    background-color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    padding: 3% 5%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+
+  .bottomContent {
+      background-color: #FFF;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      padding: 3% 5%;
+      margin-top: 2%;
+  }
+
+  .top-sidebar {
+    width: 94%; /* khong the 100 vi ben phai bi thut, ben trai co margin khong an thua */
+    padding: 2% 3%;
+    margin: 2% 0 2% 0;
+  }
+
+  .middle-sidebar {
+    width: 94%; /* khong the 100 vi ben phai bi thut, ben trai co margin khong an thua */
+    padding: 2% 3%;
+    margin: 2% 0 2% 0;
+  }
+
+  .bottom-sidebar {
+    width: 94%; /* khong the 100 vi ben phai bi thut, ben trai co margin khong an thua */
+    padding: 2% 3%;
+    margin: 2% 0 2% 0;
+  }
+}
